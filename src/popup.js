@@ -16,7 +16,8 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 ga('create', _AnalyticsCode, 'auto');
-ga('send', 'pageview');
+ga('set', 'checkProtocolTask', null); // Disable file protocol checking
+ga('send', 'pageview', '/popup.html'); // Send a virtual pageview
 
 /**
  * Track a click on a button using Event Tracking.
